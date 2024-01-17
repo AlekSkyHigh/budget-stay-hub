@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { FooterComponent } from "./core/footer/footer.component";
+import { LoginComponent } from './core/pages/login/login.component';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from "./core/footer/footer.component";
         BrowserModule,
         AppRoutingModule,
         NavbarComponent,
-        FooterComponent
+        FooterComponent,
+        LoginComponent,
     ]
 })
 export class AppModule { }
