@@ -6,8 +6,6 @@ const authController = require('./controllers/authController');
 const entryController = require('./controllers/entryController');
 const trimBody = require('./middlewares/trimBody');
 const session = require('./middlewares/session');
-const ccController = require('./controllers/ccController');
-const pcController = require('./controllers/pcController');
 
 
 const connectionString = 'mongodb://localhost:27017/budget-stay-hub';
@@ -31,8 +29,6 @@ async function start() {
 
     app.use('/users', authController);
     app.use('/entries', entryController);
-    app.use('/currency-converter', ccController)
-    app.use('/calchistories', pcController)
     app.use('*', (req, res) => {
         res.json(404)
     })
