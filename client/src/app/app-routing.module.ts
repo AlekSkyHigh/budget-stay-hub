@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './core/pages/login/login.component';
-import { RegisterComponent } from './core/pages/register/register.component';
-import { ReservationComponent } from './core/pages/reservation/reservation.component';
+import { LoginComponent } from './features/login/login.component';
+import { RegisterComponent } from './features/register/register.component';
+import { ReservationComponent } from './features/reservation/reservation.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent, pathMatch: 'full'},
